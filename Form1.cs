@@ -47,7 +47,7 @@ namespace updater
                     sr.Close();
 
                     WebClient ver_http = new WebClient();
-                    var reader_http = ver_http.OpenRead("http://85.141.186.72:64000/version.data");
+                    var reader_http = ver_http.OpenRead("http://unstablenerohttp.zapto.org/version.data");
                     StreamReader sr_http = new StreamReader(reader_http);
                     string version_site = sr_http.ReadToEnd();
 
@@ -59,7 +59,7 @@ namespace updater
                         WebClient webClient = new WebClient();
                         webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(CompletedU);
                         webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChangedU);
-                        webClient.DownloadFileAsync(new Uri("http://85.141.186.72:64000/kmods.zip"), @".\update.zip");
+                        webClient.DownloadFileAsync(new Uri("http://unstablenerohttp.zapto.org/kmods.zip"), @".\update.zip");
 
                     }
                     else
@@ -94,7 +94,7 @@ namespace updater
                     WebClient webClient = new WebClient();
                     webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(CompletedU);
                     webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChangedU);
-                    webClient.DownloadFileAsync(new Uri("http://85.141.186.72:64000/mods.zip"), @".\update.zip");
+                    webClient.DownloadFileAsync(new Uri("http://unstablenerohttp.zapto.org/mods.zip"), @".\update.zip");
                 }
             }
 
@@ -189,7 +189,7 @@ namespace updater
                 WebClient webClient = new WebClient();
                 webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(CompletedC);
                 webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChangedC);
-                webClient.DownloadFileAsync(new Uri("http://85.141.186.72:64000/client.zip"), @".\client.zip");
+                webClient.DownloadFileAsync(new Uri("http://unstablenerohttp.zapto.org/client.zip"), @".\client.zip");
             }
             else
             {
@@ -222,6 +222,7 @@ namespace updater
 
         private void launch_Click(object sender, EventArgs e)
         {
+
             if(this.nick.Text != "Введите Ник!"){
                 string CurrentPath = System.IO.Directory.GetCurrentDirectory();
                 string Mem = memText.Text;
@@ -353,7 +354,7 @@ namespace updater
                 WebClient webClient = new WebClient();
                 webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(CompletedU);
                 webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChangedU);
-                webClient.DownloadFileAsync(new Uri("http://85.141.186.72:64000/mods.zip"), @".\update.zip");
+                webClient.DownloadFileAsync(new Uri("http://unstablenerohttp.zapto.org/mods.zip"), @".\update.zip");
             }
             else
             {
