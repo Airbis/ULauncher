@@ -9,5 +9,3 @@ Costura.Fody       | 4.1.0
 Fody       | 6.2.4
 MetroModernUI   | 1.4.0
 System.IO.Compression.ZipFile       | 4.3.0
-
-[Мой сайт](http://unstablenero.xyz)
